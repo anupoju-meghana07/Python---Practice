@@ -1,4 +1,4 @@
-"""Students Marks Manager 
+""" #Students Marks Manager 
 marks=[]
 for mark in range(3):
     mark=int(input("Enter the marks:"))
@@ -12,11 +12,6 @@ print(f'Removed Mark is {removed_mark}')
 print(f'Final Student marks is {marks}')
 print(f'Count the the student {len(marks)}') 
 
-number=[20,10,30,20,40,20]
-number.sort()
-number.reverse()
-print(number) """
-
 #BMI UseCase --> BMI (Body Mass Index)
 #Weight-->kgs
 #height-->metres
@@ -24,10 +19,12 @@ print(number) """
 
 #BMI=(Weight)/((Height)**2)
 
-"""weight=float(input("Enter the weight"))
+weight=float(input("Enter the weight"))
 height=float(input("Enter the height"))
 BMI=(weight)/((height)**2)
 print(BMI) 
+
+#Using Conditions
 
 weight=float(input("Enter the weight"))
 height=float(input("Enter the height"))
@@ -97,10 +94,8 @@ while True:
                 print("Overweight")
             elif BMI>=30:
                 print("Obesity")
-            
             else:
                 print("Enter only postive number")
-
         except Exception as e:
             print(f'the error is {e}')
             
