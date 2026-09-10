@@ -95,6 +95,27 @@ all_students=python_data.union(da_students)
 all_students=python_data.intersection(da_students)
 #Only Python Students
 python_students=python_data.difference(da_students) 
+# Only one course
+only_one = python_students.symmetric_difference(da_students)
+
+# Relationship checks
+is_subset = da_students.issubset(python_students)
+is_superset = python_students.issuperset(da_students)
+is_disjoint = python_students.isdisjoint(da_students)
+
+print("Students in both courses:", both_courses)
+print("All students:", all_students)
+print("Only Python students:", only_python)
+print("Students in only one course:", only_one)
+
+print("DA is subset of Python:", is_subset)
+print("Python is superset of DA:", is_superset)
+print("Both sets are disjoint:", is_disjoint)
+
+# Display all students using a loop
+print("All students:")
+for student in all_students:
+    print(student) 
 
 
 
