@@ -11,7 +11,7 @@ Flipkart-->Products-->laptop,mobiles,gadgets...
 Features-->Encapsulation,Inheritence,Polymorphism
 
 class ClassName:
-    docstring #description
+    """docstring""" #description
      #attributes (define the data)
      .....
      .....
@@ -25,7 +25,7 @@ obj=ClassName()
 #self:Current instance 
 
 class Students:
-    Student Details
+    """Student Details"""
     name="Akash"  #class attributes
     age=22
     place="vizag"
@@ -45,7 +45,7 @@ st1.details()
 st2.details() #In above case how many ojects you create the result will be same 
 
 class Students:
-    Student details for multiple students
+    """Student details for multiple students"""
     def details(self,name,age,place):
         self.name=name  #to make it dynamic
         self.age=age
@@ -70,7 +70,7 @@ print(st2.__dict__)
 #Object to be initialized directly --> __init__()
 
 class Students:
-    Student details for multiple students 
+    """Student details for multiple students""" 
     def __init__(self,name,age,place):   
         self.name=name  #instance variables
         self.age=age
@@ -89,7 +89,7 @@ print(st2.__dict__)
 #Create mul objects
 
 class Cars:
-    Details of Cars using multiple objects 
+    """Details of Cars using multiple objects""" 
     def __init__(self,brand,price,colour):
         self.brand=brand
         self.price=price
@@ -108,7 +108,7 @@ car2.show()
 #Public : Created and modified even outside the class
 
 class Users:
-    Usage of Public attributes
+    """Usage of Public attributes"""
     def __init__(self,username):
         self.user=username #Public Attribute
     def display(self):
@@ -124,7 +124,7 @@ u1.display()
 #To create a protected attribute we use underscore --> _otp
 
 class Users:
-    Usage of Public attributes
+    """Usage of Public attributes"""
     def __init__(self,username,_otp):
         self.user=username #Public Attribute
         self._otp = _otp   #Protected Attribute
@@ -141,7 +141,7 @@ u1.display()
 
 
 class Users:
-    Usage of Private attributes 
+    """Usage of Private attributes""" 
     def __init__(self,username,_otp,__password):
         self.user=username          #Public Attribute
         self._otp = _otp            #Protected Attribute
@@ -155,9 +155,9 @@ print(u1.user,u1._otp)
 #print(u1.__password)  AttributeError
 print(u1.__dict__)
 #In above case password can't be accessed directly --> NameMangling -- Accessing through class
-print(u1._Users__password)
+print(u1._Users__password) """
 
-#Usage of getter(),setter() Methods """
+#Usage of getter(),setter() Methods  
 
 class Users:
     """Usage of Private attributes """
